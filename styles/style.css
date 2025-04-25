@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+    --cor-destaque: #9932CC;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--fonte-primaria);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 0.875rem;
+}
+
+p {
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+}
+
+p:hover {
+    color: var(--cor-hover);
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+a:hover {
+    color: var(--cor-hover);
+}
+
+a:visited {
+    color: var(--cor-secundaria);
+}
+
+a:active {
+    color: var(--cor-hover);
+}
+
+button {
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+.item__loja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 100px;
+}
+
+
+/* Carrossel Especialidade */
+
+body {
+    background-color: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.especialidades-highlight {
+    color: var(--cor-destaque);
+}
+
+.carousel-item {
+    background-color: #111;
+    border-radius: 15px;
+    padding: 3rem 1.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(153, 50, 204, 0.1);
+    min-height: 300px;
+}
+
+.carousel-item:hover {
+    box-shadow: 0 0 30px rgba(153, 50, 204, 0.5);
+    transform: translateY(-5px);
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: inset 0 0 0 1px rgba(153, 50, 204, 0.3);
+    pointer-events: none;
+}
+
+.item__loja {
+    width: 80px !important;
+    /* Sobrescrever classe w-20 */
+    height: 80px;
+    margin: 0 auto 2rem;
+    color: var(--cor-destaque);
+    display: block;
+}
+
+.carousel-caption {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+    color: #fff;
+}
+
+.carousel-item-titulo {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.carousel-item-conteudo {
+    font-size: 1rem;
+    color: #aaa;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    color: var(--cor-destaque);
+    opacity: 0.8;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    color: var(--cor-destaque);
+    opacity: 1;
+}
+
+.title-large {
+    font-size: 3.5rem;
+    /* Ajuste o valor conforme necessário */
+}
+
+/* Para mostrar os controles em telas pequenas também */
+.carousel-caption.d-none.d-md-block {
+    display: block !important;
+}
+
+/* Minha foto */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.floating-effect {
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-15px) rotate(2deg);
+    }
+    100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+  }
+
+  .glowing-border {
+    border: 3px solid #9932CC;
+    box-shadow: 0 0 15px #9932CC, 0 0 20px rgba(153, 50, 204, 0.7), 0 0 30px rgba(153, 50, 204, 0.4);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .glowing-border:hover {
+    box-shadow: 0 0 20px #9932CC, 0 0 30px rgba(153, 50, 204, 0.8), 0 0 40px rgba(153, 50, 204, 0.6);
+  }
+
+  .glowing-border {
+    border: 3px solid #9932CC;
+    box-shadow: 0 0 15px #9932CC, 0 0 25px #9932CC, 0 0 35px rgba(153, 50, 204, 0.7), 0 0 45px rgba(153, 50, 204, 0.4);
+    transition: box-shadow 0.5s ease, border 0.5s ease;
+  }
+  
+  .glowing-border:hover {
+    border: 3px solid #b566e5;
+    box-shadow: 0 0 20px #9932CC, 0 0 35px #9932CC, 0 0 45px rgba(153, 50, 204, 0.8), 0 0 60px rgba(153, 50, 204, 0.6);
+  }
+
+
+  /* Bloco minhas habilidades */
+  
+  .glowing-border {
+    border: none;
+    box-shadow: none; /* Sem brilho por padrão */
+    transition: box-shadow 0.5s ease; /* Mantém a transição suave para o hover */
+    /* Adicione padding se necessário para evitar que o conteúdo salte quando a sombra aparecer */
+    /* padding: 2px; */ /* Ajuste o valor conforme necessário */
+    /* Ou use 'outline' em vez de 'border' se quiser evitar problemas de layout */
+  }
+  
+  .glowing-border:hover {
+    /* Aplica o brilho apenas quando o mouse está sobre o elemento */
+    box-shadow: 0 0 15px #9932CC, 0 0 25px #9932CC, 0 0 35px rgb(255, 255, 255), 0 0 45px rgba(153, 50, 204, 0.4);
+  }
+  
+  .MySQL, .PostgreSQL, .phpMyAdmin, .MariaDB, .SQLite, .express, .NodeJS, .JavaScript, .HTML, .CSS, .Bootstrap, .PHP, .Tailwind, .TypeScript, .C, .Vue, .Visual, .Git, .GitHub, .GitLab, .Bitbucket, .Terminal, .Angular, .Node, .Python, .socket, .React, .jest, .cypress, .dotenv {
+    background-color: #ffffff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    transition: all 0.3s ease;
+  }
+
+
+body {
+    background-color: #0f0f0f;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.main-container {
+    padding: 40px 20px;
+}
+
+.main-title {
+    color: white;
+    margin-bottom: 40px;
+}
+
+.tech-purple {
+    color: #a64dff;
+}
+
+/* Container com a borda brilhante envolvendo todas as seções */
+.all-sections-container {
+    position: relative;
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+/* Efeito de borda brilhante para o container geral */
+.all-sections-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    padding: 2px; /* Espessura da borda */
+    background: linear-gradient(45deg, 
+        rgba(138, 43, 226, 0.8), 
+        rgba(216, 131, 255, 0.8), 
+        rgba(138, 43, 226, 0.8));
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.5);
+    z-index: -1;
+}
+
+/* Animação sutil de brilho */
+@keyframes borderGlow {
+    0% {
+        box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(138, 43, 226, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+    }
+}
+
+/* Aplicar animação à borda constantemente */
+.all-sections-container::before {
+    animation: borderGlow 3s infinite;
+}
+
+/* Estilo para título das seções */
+.section-title {
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: white;
+}
+
+/* Estilo para os ícones - garantindo que sejam brancos */
+.tech-icon {
+    filter: brightness(0) invert(1); /* Isso faz com que os ícones fiquem brancos */
+    width: 40px;
+    height: auto;
+}
+
+/* Estilo para os cards de habilidades */
+
+/* Seção Portfolio */
+
+.card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(153, 50, 204, 0.1);
+}
+.card:hover {
+    box-shadow: 0 0 30px rgba(153, 50, 204, 0.5);
+    transform: translateY(-5px);
+}
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+.card-text {
+    font-size: 1rem;
+    color: #aaa;
+    max-width: 80%;
+    /* margin: 0 auto; */
+    /* padding: 5px; */
+    text-align: justify;
+    line-height: 1.5;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    transition: color 0.3s ease;
+}
+.card-link {
+    text-decoration: none;
+    color: var(--cor-destaque);
+    font-weight: bold;
+}
+.card-link:hover {
+    color: var(--cor-hover);
+}
+.card-link:visited {
+    color: var(--cor-secundaria);
+}
+.card-link:active {
+    color: var(--cor-hover);
+}
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+/* Estilo para o botão de download */
+
+/* Sessão contato */
+
+.glowing-card-purple {
+    /* Garanta um fundo escuro para contraste */
+    background-color: #1a1a1a; /* Cor escura de exemplo, ajuste conforme necessário */
+    border: none; /* Remove a borda padrão do Bootstrap */
+    border-radius: 0; /* Cantos retos como na imagem de exemplo, ou adicione um raio pequeno se preferir */
+  
+    /* O Efeito Brilhante */
+    /* Formato: deslocamento-x | deslocamento-y | raio-desfoque | raio-expansão | cor */
+    box-shadow: 0 0 20px 3px rgba(138, 43, 226, 0.5); /* BlueViolet com transparência */
+    /* Ajuste os valores:
+       - raio-desfoque (20px): Controla quão suave é o brilho. Maior = mais suave.
+       - raio-expansão (3px): Controla o quanto a sombra se expande *antes* do desfoque. Maior = brilho maior.
+       - cor (rgba): Ajuste a cor (138, 43, 226 é BlueViolet) e a opacidade (0.5 = 50%).
+    */
+  
+    /* Garanta que o texto interno seja legível */
+    color: #f8f9fa; /* Cor de texto clara */
+  }
+  
+  /* Estilize labels e potencialmente outros elementos internos se necessário */
+  .glowing-card-purple .form-label {
+    color: #ced4da; /* Cinza mais claro para labels */
+  }
+  
+  /* Opcional: Ajuste os estilos de input/textarea para fundo escuro */
+  .glowing-card-purple .form-control {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+  }
+  
+  .glowing-card-purple .form-control:focus {
+    background-color: #444;
+    color: #fff;
+    border-color: #8A2BE2; /* Corresponde à cor do brilho no foco */
+    box-shadow: 0 0 0 0.25rem rgba(138, 43, 226, 0.25); /* Brilho de foco */
+  }
+
+  /* SESSÃO FOOTER */
+
+  /* Estilo Base e Brilho para o Footer */
+.glowing-footer {
+    background-color: #111; /* Fundo escuro para o footer */
+    color: #ccc; /* Cor de texto padrão clara */
+    padding: 20px 0; /* Adiciona algum padding vertical */
+    border-top: 1px solid #333; /* Uma linha sutil no topo, opcional */
+  
+    /* Efeito de Brilho Sutil (branco/cinza claro) no topo */
+    /* Ajuste a cor (rgba) e a intensidade (blur/spread/opacidade) */
+    box-shadow: 0 -10px 25px -5px rgba(200, 200, 200, 0.1);
+    /* Explicação:
+       0          -> offset-x (sem deslocamento horizontal)
+       -10px      -> offset-y (desloca a sombra para CIMA)
+       25px       -> blur-radius (desfoque/suavidade)
+       -5px       -> spread-radius (negativo encolhe a sombra antes de desfocar, criando um brilho mais contido no topo)
+       rgba(...)  -> Cor cinza claro com baixa opacidade
+    */
+  }
+  
+  /* Garante que os links dentro do footer sejam legíveis */
+  .glowing-footer a {
+    color: #f8f9fa; /* Cor branca/clara para links */
+    text-decoration: none; /* Remove sublinhado padrão */
+    transition: color 0.3s ease;
+  }
+  
+  .glowing-footer a:hover {
+    color: #8A2BE2; /* Cor roxa no hover, por exemplo */
+  }
+  
+  /* Estilização base para ícones sociais (substitui o <button>) */
+  .social-icon {
+    display: inline-flex; /* Para alinhar ícone */
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Tamanho do botão */
+    height: 40px; /* Tamanho do botão */
+    background-color: #333; /* Fundo do ícone */
+    color: #f8f9fa; /* Cor do ícone */
+    border-radius: 50%; /* Deixa redondo */
+    margin: 0 5px; /* Espaçamento */
+    font-size: 1.2rem; /* Tamanho do ícone */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+  }
+  
+  .social-icon:hover {
+    background-color: #8A2BE2; /* Cor roxa no hover */
+    box-shadow: 0 0 10px 2px rgba(138, 43, 226, 0.5); /* Adiciona brilho no hover */
+  }
+  
+  /* --- Estilo para o Botão Voltar ao Topo --- */
+  #btn-topo {
+    position: fixed; /* Posicionamento fixo */
+    bottom: 30px;
+    right: 30px;
+    width: 50px; /* Tamanho */
+    height: 50px; /* Tamanho */
+    background-color: #222; /* Fundo escuro */
+    color: #fff; /* Cor do ícone */
+    border-radius: 50%; /* Circular */
+    display: flex; /* Para centralizar o ícone */
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem; /* Tamanho do ícone */
+    text-decoration: none;
+    z-index: 1000; /* Para ficar sobre outros elementos */
+    border: none; /* Remove qualquer borda padrão */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Transições */
+  
+    /* Efeito de Brilho Roxo */
+    /* Ajuste cor, intensidade (blur/spread/opacity) */
+    box-shadow: 0 0 15px 3px rgba(138, 43, 226, 0.6); /* BlueViolet */
+  }
+  
+  #btn-topo:hover {
+    background-color: #8A2BE2; /* Muda fundo no hover */
+    color: #fff;
+    /* Intensifica o brilho no hover */
+    box-shadow: 0 0 25px 5px rgba(138, 43, 226, 0.8);
+    transform: scale(1.1); /* Leve aumento no hover */
+  }
