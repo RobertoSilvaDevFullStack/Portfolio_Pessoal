@@ -5,24 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
+    <title>Roberto Silva - Desenvolvedor Web | Portfólio</title> <!-- Título Melhorado -->
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/style.css">
-
+    <!-- Bootstrap Icons CSS (Necessário para bi-* classes) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Seu CSS Customizado (Mantido apenas um link) -->
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <!-- Links removidos: reset.css (redundante), Font Awesome, Devicon, Simple Icons (não utilizados) -->
 </head>
 
 <body>
-    <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <!-- O ID "inicio" pode ser útil para o botão "Voltar ao topo" -->
+    <header id="inicio" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="./assets/logotransparente-removebg-preview.png" alt="Logo do Portfólio" height="50">
+                <img src="./assets/logotransparente-removebg-preview.png" alt="Logotipo de Roberto Silva" height="50">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,14 +59,14 @@
                     <h1 class="main-title display-4 fw-bold">Eleve seu negócio digital a outro nível
                         <span class="tech-purple">com um desenvolvedor de qualidade!</span>
                     </h1>
-                    <p class="lead mb-4">Se você está procurando por um desenvolvedor web para criar ou aprimorar seu projeto, você está no lugar certo!
+                    <p class="lead mb-4">Se você está procurando por um desenvolvedor web para criar ou aprimorar seu
+                        projeto, você está no lugar certo!
                         Vamos conversar e transformar sua ideia em realidade.</p>
-                    <?php
-                    $link = "https://api.whatsapp.com/send?phone=5511916611575&text=Olá%20Roberto%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços.";
-                    ?>
-
-                    <a class="btn btn-success btn-lg d-inline-flex align-items-center" href="<?php echo $link; ?>">
-                        <img src="./assets/whatsapp.png" alt="Whatsapp" class="me-2" style="height: 24px;">
+                    <!-- Link do WhatsApp estático (PHP removido) -->
+                    <a class="btn btn-success btn-lg d-inline-flex align-items-center"
+                        href="https://api.whatsapp.com/send?phone=5511916611575&text=Olá%20Roberto%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços."
+                        target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/whatsapp.png" alt="Ícone WhatsApp" class="me-2" style="height: 24px;">
                         Whatsapp
                     </a>
                 </div>
@@ -82,64 +81,77 @@
 
     <section id="especialidades" class="py-5 bg">
         <div class="container py-5">
-            <div class="section-title">
+            <div class="section-title text-center mb-5"> <!-- Adicionado text-center e margin bottom -->
                 <h2 class="fw-bold display-4">MINHAS <span class="especialidades-highlight">ESPECIALIDADES</span></h2>
             </div>
 
             <div id="carouselEspecialidades" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="d-flex flex-column align-items-center justify-content-center">
-                            <img src="./assets/cart4.svg" class="item__loja d-block" alt="Loja Online">
-                            <div class="carousel-caption d-none d-md-block">
+                        <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                            <!-- Adicionado text-center -->
+                            <img src="./assets/cart4.svg" class="item__loja d-block mb-3"
+                                alt="Ícone representando Loja Online"> <!-- Adicionado margin bottom -->
+                            <!-- Removido d-none d-md-block para sempre mostrar -->
+                            <div class="carousel-caption">
                                 <h5 class="carousel-item-titulo">Loja Online</h5>
-                                <p class="carousel-item-conteudo">Criação de e-commerces intuitivos, otimizados para conversão e performance.</p>
+                                <p class="carousel-item-conteudo">Criação de e-commerces intuitivos, otimizados para
+                                    conversão e performance.</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Você pode adicionar mais itens do carrossel aqui -->
                     <div class="carousel-item">
-                        <div class="d-flex flex-column align-items-center justify-content-center">
-                            <img src="./assets/wordpress.svg" class="item__loja d-block" alt="Blog">
-                            <div class="carousel-caption d-none d-md-block">
+                        <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                            <img src="./assets/wordpress.svg" class="item__loja d-block mb-3"
+                                alt="Ícone representando Blog">
+                            <div class="carousel-caption">
                                 <h5 class="carousel-item-titulo">Blog</h5>
-                                <p class="carousel-item-conteudo">Desenvolvimento de soluções para blogs, integrando tecnologia e experiência do usuário.</p>
+                                <p class="carousel-item-conteudo">Desenvolvimento de soluções para blogs, integrando
+                                    tecnologia e experiência do usuário.</p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="d-flex flex-column align-items-center justify-content-center">
-                            <img src="./assets/people-fill.svg" class="item__loja d-block" alt="Loja de Serviços">
-                            <div class="carousel-caption d-none d-md-block">
+                        <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                            <img src="./assets/people-fill.svg" class="item__loja d-block mb-3"
+                                alt="Ícone representando Loja de Serviços">
+                            <div class="carousel-caption">
                                 <h5 class="carousel-item-titulo">Loja de Serviços</h5>
-                                <p class="carousel-item-conteudo">Criação de plataformas para agendamento e venda de serviços, otimizando a experiência do cliente.</p>
+                                <p class="carousel-item-conteudo">Criação de plataformas para agendamento e venda de
+                                    serviços, otimizando a experiência do cliente.</p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="d-flex flex-column align-items-center justify-content-center">
-                            <img src="./assets/buildings.svg" class="item__loja d-block" alt="Loja Física">
-                            <div class="carousel-caption d-none d-md-block">
+                        <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                            <img src="./assets/buildings.svg" class="item__loja d-block mb-3"
+                                alt="Ícone representando Landing Pages Imobiliárias">
+                            <div class="carousel-caption">
                                 <h5 class="carousel-item-titulo">Landing Pages</h5>
-                                <p class="carousel-item-conteudo">Desenvolvimento de páginas de captação de leads voltados para o mercado imobiliário</p>
+                                <p class="carousel-item-conteudo">Desenvolvimento de páginas de captação de leads
+                                    voltados para o mercado imobiliário</p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="d-flex flex-column align-items-center justify-content-center">
-                            <img src="./assets/diagram-3.svg" class="item__loja d-block" alt="Loja de Serviços">
-                            <div class="carousel-caption d-none d-md-block">
+                        <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                            <img src="./assets/diagram-3.svg" class="item__loja d-block mb-3"
+                                alt="Ícone representando Websites">
+                            <div class="carousel-caption">
                                 <h5 class="carousel-item-titulo">Websites</h5>
-                                <p class="carousel-item-conteudo">Criação de sites responsivos e otimizados para expor a sua marca e também seu posicionamento na internet.</p>
+                                <p class="carousel-item-conteudo">Criação de sites responsivos e otimizados para expor a
+                                    sua marca e também seu posicionamento na internet.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselEspecialidades" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselEspecialidades"
+                    data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Anterior</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselEspecialidades" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselEspecialidades"
+                    data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Próximo</span>
                 </button>
@@ -147,101 +159,139 @@
         </div>
     </section>
 
-    <div class="container main-container">
-        <div class="text-center mb-5">
-            <h4 class="main-title display-4 fw-bold">MINHAS <span class="tech-purple">TECNOLOGIAS</span></h4>
+    <!-- Seção Tecnologias envolvida por <section> -->
+    <section id="tecnologias" class="py-5">
+        <div class="container"> <!-- Removido main-container, py-5 está na section -->
+            <div class="text-center mb-5">
+                <h2 class="main-title display-4 fw-bold">MINHAS <span class="tech-purple">TECNOLOGIAS</span></h2>
+                <!-- Usado h2 para consistência -->
+            </div>
+
+            <!-- Container único com borda brilhante envolvendo todas as seções de tecnologias -->
+            <div class="all-sections-container">
+                <!-- Seção de Linguagens -->
+                <div class="row text-center mb-4">
+                    <h4 class="section-title display-5">Linguagens</h4> <!-- Ajustado display para h4 -->
+                    <div class="d-flex justify-content-center flex-wrap gap-4">
+                        <img class="tech-icon" src="assets/html5.svg" alt="Ícone HTML 5" data-bs-toggle="tooltip"
+                            title="HTML 5" />
+                        <img class="tech-icon" src="assets/css3.svg" alt="Ícone CSS 3" data-bs-toggle="tooltip"
+                            title="CSS 3" />
+                        <img class="tech-icon" src="assets/javascript.svg" alt="Ícone JavaScript"
+                            data-bs-toggle="tooltip" title="JavaScript" />
+                        <img class="tech-icon" src="assets/python.svg" alt="Ícone Python" data-bs-toggle="tooltip"
+                            title="Python" />
+                        <img class="tech-icon" src="assets/php.svg" alt="Ícone PHP" data-bs-toggle="tooltip"
+                            title="PHP" />
+                        <img class="tech-icon" src="assets/typescript.svg" alt="Ícone TypeScript"
+                            data-bs-toggle="tooltip" title="TypeScript" />
+                    </div>
+                </div>
+
+                <!-- Seção de Frameworks -->
+                <div class="row text-center mb-4">
+                    <h4 class="section-title display-5">Frameworks</h4>
+                    <div class="d-flex justify-content-center flex-wrap gap-4">
+                        <img class="tech-icon" src="assets/tailwindcss.svg" alt="Ícone TailwindCSS"
+                            data-bs-toggle="tooltip" title="TailwindCSS" />
+                        <img class="tech-icon" src="assets/bootstrap.svg" alt="Ícone Bootstrap" data-bs-toggle="tooltip"
+                            title="Bootstrap" />
+                        <img class="tech-icon" src="assets/react.svg" alt="Ícone React.js" data-bs-toggle="tooltip"
+                            title="React.js" />
+                        <img class="tech-icon" src="assets/vuedotjs.svg" alt="Ícone Vue.js" data-bs-toggle="tooltip"
+                            title="Vue.js" />
+                        <img class="tech-icon" src="assets/angular.svg" alt="Ícone Angular" data-bs-toggle="tooltip"
+                            title="Angular" />
+                        <img class="tech-icon" src="assets/nodedotjs.svg" alt="Ícone Node.js" data-bs-toggle="tooltip"
+                            title="Node.js" />
+                    </div>
+                </div>
+
+                <!-- Seção de Ferramentas -->
+                <div class="row text-center mb-4">
+                    <h4 class="section-title display-5">Ferramentas</h4>
+                    <div class="d-flex justify-content-center flex-wrap gap-4">
+                        <img class="tech-icon" src="assets/codecrafters.svg" alt="Ícone VS Code"
+                            data-bs-toggle="tooltip" title="Visual Studio Code" />
+                        <img class="tech-icon" src="assets/git.svg" alt="Ícone Git" data-bs-toggle="tooltip"
+                            title="Git" />
+                        <img class="tech-icon" src="assets/github.svg" alt="Ícone GitHub" data-bs-toggle="tooltip"
+                            title="GitHub" />
+                        <img class="tech-icon" src="assets/gitlab.svg" alt="Ícone GitLab" data-bs-toggle="tooltip"
+                            title="GitLab" />
+                        <img class="tech-icon" src="assets/bitbucket.svg" alt="Ícone Bitbucket" data-bs-toggle="tooltip"
+                            title="Bitbucket" />
+                        <img class="tech-icon" src="assets/gnometerminal.svg" alt="Ícone Terminal"
+                            data-bs-toggle="tooltip" title="Terminal" />
+                    </div>
+                </div>
+
+                <!-- Seção de Banco de Dados -->
+                <div class="row text-center mb-4">
+                    <h4 class="section-title display-5">Banco de Dados</h4>
+                    <div class="d-flex justify-content-center flex-wrap gap-4"> <!-- Adicionado flex-wrap -->
+                        <img class="tech-icon" src="assets/mysql.svg" alt="Ícone MySQL" data-bs-toggle="tooltip"
+                            title="MySQL" />
+                        <img class="tech-icon" src="assets/postgresql.svg" alt="Ícone PostgreSQL"
+                            data-bs-toggle="tooltip" title="PostgreSQL" />
+                        <img class="tech-icon" src="assets/phpmyadmin.svg" alt="Ícone phpMyAdmin"
+                            data-bs-toggle="tooltip" title="phpMyAdmin" />
+                        <img class="tech-icon" src="assets/mariadb.svg" alt="Ícone MariaDB" data-bs-toggle="tooltip"
+                            title="MariaDB" />
+                        <img class="tech-icon" src="assets/sqlite.svg" alt="Ícone SQLite" data-bs-toggle="tooltip"
+                            title="SQLite" />
+                    </div>
+                </div>
+
+                <!-- Seção de Bibliotecas -->
+                <div class="row text-center"> <!-- Removido mb-4 do último -->
+                    <h4 class="section-title display-5">Bibliotecas</h4>
+                    <div class="d-flex justify-content-center flex-wrap gap-4">
+                        <img class="tech-icon" src="assets/express.svg" alt="Ícone Express.js" data-bs-toggle="tooltip"
+                            title="Express.js" />
+                        <img class="tech-icon" src="assets/socketdotio.svg" alt="Ícone Socket.IO"
+                            data-bs-toggle="tooltip" title="Socket.IO" />
+                        <img class="tech-icon" src="assets/jest.svg" alt="Ícone Jest" data-bs-toggle="tooltip"
+                            title="Jest" />
+                        <img class="tech-icon" src="assets/cypress.svg" alt="Ícone Cypress" data-bs-toggle="tooltip"
+                            title="Cypress" />
+                        <img class="tech-icon" src="assets/dotenv.svg" alt="Ícone DotEnv" data-bs-toggle="tooltip"
+                            title="DotEnv" />
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Container único com borda brilhante envolvendo todas as seções -->
-        <div class="all-sections-container">
-            <!-- Seção de Linguagens -->
-            <div class="row text-center mb-4">
-                <h4 class="section-title display-1">Linguagens</h4>
-                <div class="d-flex justify-content-center flex-wrap gap-4">
-                    <img class="tech-icon" src="assets/html5.svg" data-bs-toggle="tooltip" title="HTML 5" />
-                    <img class="tech-icon" src="assets/css3.svg" data-bs-toggle="tooltip" title="CSS 3" />
-                    <img class="tech-icon" src="assets/javascript.svg" data-bs-toggle="tooltip" title="JavaScript" />
-                    <img class="tech-icon" src="assets/python.svg" data-bs-toggle="tooltip" title="Python" />
-                    <img class="tech-icon" src="assets/php.svg" data-bs-toggle="tooltip" title="PHP" />
-                    <img class="tech-icon" src="assets/typescript.svg" data-bs-toggle="tooltip" title="TypeScript" />
-                </div>
-            </div>
-
-            <!-- Seção de Frameworks -->
-            <div class="row text-center mb-4">
-                <h4 class="section-title display-1">Frameworks</h4>
-                <div class="d-flex justify-content-center flex-wrap gap-4">
-                    <img class="tech-icon" src="assets/tailwindcss.svg" data-bs-toggle="tooltip" title="TailwindCSS" />
-                    <img class="tech-icon" src="assets/bootstrap.svg" data-bs-toggle="tooltip" title="Bootstrap" />
-                    <img class="tech-icon" src="assets/react.svg" data-bs-toggle="tooltip" title="React.js" />
-                    <img class="tech-icon" src="assets/vuedotjs.svg" data-bs-toggle="tooltip" title="Vue.js" />
-                    <img class="tech-icon" src="assets/angular.svg" data-bs-toggle="tooltip" title="Angular" />
-                    <img class="tech-icon" src="assets/nodedotjs.svg" data-bs-toggle="tooltip" title="Node.js" />
-                </div>
-            </div>
-
-            <!-- Seção de Ferramentas -->
-            <div class="row text-center mb-4">
-                <h4 class="section-title display-1">Ferramentas</h4>
-                <div class="d-flex justify-content-center flex-wrap gap-4">
-                    <img class="tech-icon" src="assets/codecrafters.svg" data-bs-toggle="tooltip" title="Visual Studeo Code" />
-                    <img class="tech-icon" src="assets/git.svg" data-bs-toggle="tooltip" title="Git" />
-                    <img class="tech-icon" src="assets/github.svg" data-bs-toggle="tooltip" title="GitHub" />
-                    <img class="tech-icon" src="assets/gitlab.svg" data-bs-toggle="tooltip" title="GitLab" />
-                    <img class="tech-icon" src="assets/bitbucket.svg" data-bs-toggle="tooltip" title="Bitbucket" />
-                    <img class="tech-icon" src="assets/gnometerminal.svg" data-bs-toggle="tooltip" title="Terminal" />
-                </div>
-            </div>
-
-            <!-- Seção de Banco de Dados -->
-            <div class="row text-center mb-4">
-                <h4 class="section-title display-1">Banco de Dados</h4>
-                <div class="d-flex justify-content-center gap-4">
-                    <img class="tech-icon" src="assets/mysql.svg" data-bs-toggle="tooltip" title="MySQL" />
-                    <img class="tech-icon" src="assets/postgresql.svg" data-bs-toggle="tooltip" title="PostgreSQL" />
-                    <img class="tech-icon" src="assets/phpmyadmin.svg" data-bs-toggle="tooltip" title="phpMyAdmin" />
-                    <img class="tech-icon" src="assets/mariadb.svg" data-bs-toggle="tooltip" title="MariaDB" />
-                    <img class="tech-icon" src="assets/sqlite.svg" data-bs-toggle="tooltip" title="SQLite" />
-                </div>
-            </div>
-
-            <!-- Seção de Bibliotecas -->
-            <div class="row text-center">
-                <h4 class="section-title display-1">Bibliotecas</h4>
-                <div class="d-flex justify-content-center flex-wrap gap-4">
-                    <img class="tech-icon" src="assets/express.svg" data-bs-toggle="tooltip" title="Express.js" />
-                    <img class="tech-icon" src="assets/socketdotio.svg" data-bs-toggle="tooltip" title="Socket.IO" />
-                    <img class="tech-icon" src="assets/jest.svg" data-bs-toggle="tooltip" title="Jest" />
-                    <img class="tech-icon" src="assets/cypress.svg" data-bs-toggle="tooltip" title="Cypress" />
-                    <img class="tech-icon" src="assets/dotenv.svg" data-bs-toggle="tooltip" title="DotEnv" />
-                </div>
-            </div>
-        </div>
-    </div>
     </section>
 
     <section id="sobre" class="py-5 bg">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-7 mb-4 mb-lg-0">
-                    <h4 class="main-title display-4 fw-bold">Muito prazer me <span class="tech-purple">chamo Roberto Silva</span></h4>
-                    <p class="lead mb-4">Um entusiasta da tecnologia e desenvolvedor Full Stack em constante evolução. Minha jornada na programação é marcada por uma busca incessante por
+                    <h2 class="main-title display-4 fw-bold">Muito prazer, me <span class="tech-purple">chamo Roberto
+                            Silva</span></h2> <!-- Usado h2 para consistência -->
+                    <p class="lead mb-4">Um entusiasta da tecnologia e desenvolvedor Full Stack em constante evolução.
+                        Minha jornada na programação é marcada por uma busca incessante por
                         conhecimento e aprimoramento contínuo.
-                        Desde o início, mergulhei de cabeça no mundo do desenvolvimento, explorando linguagens como HTML, CSS e
-                        PHP. Cada linha de código que escrevo é uma oportunidade de aprender algo novo e enfrentar desafios
-                        empolgantes.
-
-                        Estou sempre em busca de novas tecnologias e tendências, e atualmente estou me aprofundando em
-                        frameworks como Tailwind e Bootstrap, além de aprimorar minhas habilidades em JavaScript. Acredito que a
+                        Desde o início, mergulhei de cabeça no mundo do desenvolvimento, explorando linguagens como
+                        HTML, CSS e
+                        PHP. Cada linha de código que escrevo é uma oportunidade de aprender algo novo e enfrentar
+                        desafios
+                        empolgantes.</p>
+                    <p class="lead mb-4">Estou sempre em busca de novas tecnologias e tendências, e atualmente estou me
+                        aprofundando em
+                        frameworks como Tailwind e Bootstrap, além de aprimorar minhas habilidades em JavaScript.
+                        Acredito que a
                         tecnologia tem o poder de transformar vidas e negócios, e estou aqui para fazer parte dessa
                         transformação.</p>
                     <p class="lead mb-4">Meu objetivo é ajudar pequenos negócios e designers a concretizarem
                         suas ideias, criando soluções digitais que sejam não apenas funcionais, mas também esteticamente
-                        agradáveis. Estou sempre aberto a colaborações e parcerias que possam impulsionar projetos inovadores.
-                        Se você está em busca de um desenvolvedor comprometido, apaixonado e disposto a enfrentar desafios,
-                        estou aqui para ajudar. Vamos conversar e explorar como posso contribuir para o sucesso do seu projeto!
+                        agradáveis. Estou sempre aberto a colaborações e parcerias que possam impulsionar projetos
+                        inovadores.
+                        Se você está em busca de um desenvolvedor comprometido, apaixonado e disposto a enfrentar
+                        desafios,
+                        estou aqui para ajudar. Vamos conversar e explorar como posso contribuir para o sucesso do seu
+                        projeto!
                     </p>
-
                 </div>
                 <div class="foto_perfil col-lg-5 text-center">
                     <img src="./assets/minha_foto.jpeg" alt="Foto de Roberto Silva"
@@ -250,159 +300,215 @@
                 </div>
             </div>
         </div>
-        <!-- Conteúdo da seção Sobre mim -->
-        </div>
-        </div>
     </section>
 
-    <section>
-        <div class="portfolio container main-container">
+    <!-- Seção Portfólio envolvida por <section> -->
+    <section id="portfolio" class="py-5">
+        <div class="container"> <!-- Removido main-container e portfolio, py-5 está na section -->
             <div class="text-center mb-5">
-                <h4 class="main-title display-4 fw-bold">MEU <span class="tech-purple">PORTFÓLIO</span></h4>
+                <h2 class="main-title display-4 fw-bold">MEU <span class="tech-purple">PORTFÓLIO</span></h2>
+                <!-- Usado h2 para consistência -->
                 <p class="lead mb-4">Aqui estão alguns dos meus projetos mais recentes:</p>
             </div>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Ajustado para melhor responsividade (md-2) -->
                 <div class="col">
-                    <div class="card">
-                        <img src="assets/pagina_imobiliaria.jpeg" class="card-img-top" alt="Landing Page Imobiliária">
-                        <div class="card-body">
+                    <div class="card h-100"> <!-- Adicionado h-100 para cards de mesma altura -->
+                        <img src="assets/pagina_imobiliaria.jpeg" class="card-img-top"
+                            alt="Preview da Landing Page Imobiliária">
+                        <div class="card-body d-flex flex-column"> <!-- Adicionado d-flex flex-column -->
                             <h5 class="card-title">Landing Page Imobiliária</h5>
-                            <p class="card-text">Captura de Leads | Responsivo | Tailwind & Alpine.js | Foco em Conversão.</p>
-                            <a href="https://robertosilva19.github.io/Landing_Page_Fer/" class="btn btn-primary">Ver Projeto</a>
+                            <p class="card-text flex-grow-1">Captura de Leads | Responsivo | Tailwind & Alpine.js | Foco
+                                em Conversão.</p> <!-- Adicionado flex-grow-1 -->
+                            <a href="https://robertosilva19.github.io/Landing_Page_Fer/" class="btn btn-primary mt-auto"
+                                target="_blank" rel="noopener noreferrer">Ver Projeto</a>
+                            <!-- Adicionado mt-auto e target blank -->
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
-                        <img src="assets/pagina_adivinhacao.jpeg" class="card-img-top" alt="Pagina de Adivinhação">
-                        <div class="card-body">
+                    <div class="card h-100">
+                        <img src="assets/pagina_adivinhacao.jpeg" class="card-img-top"
+                            alt="Preview do Jogo Número Secreto">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Jogo JS - Número Secreto</h5>
-                            <p class="card-text">Tela de Resultado | HTML Semântico | CSS (BEM-like) | JS (defer).</p>
-                            <a href="https://robertosilva19.github.io/jogo_adivinhacao/" class="btn btn-primary">Ver Projeto</a>
+                            <p class="card-text flex-grow-1">Tela de Resultado | HTML Semântico | CSS (BEM-like) | JS
+                                (defer).</p>
+                            <a href="https://robertosilva19.github.io/jogo_adivinhacao/" class="btn btn-primary mt-auto"
+                                target="_blank" rel="noopener noreferrer">Ver Projeto</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
+                    <div class="card h-100">
                         <img src="assets/pagina_cinema.jpeg" class="card-img-top" alt="Preview do website Luz e Cena">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Website Luz e Cena (Frontend)</h5>
-                            <p class="card-text">HTML5 Semântico | CSS Modular (BEM) | Estrutura Componentizada | ARIA.</p>
-                            <a href="https://robertosilva19.github.io/meu_cinema/" class="btn btn-primary">Ver Projeto</a>
+                            <p class="card-text flex-grow-1">HTML5 Semântico | CSS Modular (BEM) | Estrutura
+                                Componentizada | ARIA.</p>
+                            <a href="https://robertosilva19.github.io/meu_cinema/" class="btn btn-primary mt-auto"
+                                target="_blank" rel="noopener noreferrer">Ver Projeto</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
-                        <img src="assets/bibliotecadb.jpeg" class="card-img-top" alt="Preview do Banco de Dados">
-                        <div class="card-body">
+                    <div class="card h-100">
+                        <img src="assets/bibliotecadb.jpeg" class="card-img-top"
+                            alt="Preview do Schema do Banco de Dados Biblioteca">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Schema BD - Biblioteca</h5>
-                            <p class="card-text">Script SQL (MySQL) para criação da estrutura de banco de dados de um sistema de biblioteca, incluindo tabelas, relacionamentos, triggers e procedures.</p>
-                            <a href="https://github.com/robertosilva19/BibliotecaDB" class="btn btn-primary">Ver Projeto</a>
+                            <p class="card-text flex-grow-1">Script SQL (MySQL) para criação da estrutura de banco de
+                                dados de um sistema de biblioteca, incluindo tabelas, relacionamentos, triggers e
+                                procedures.</p>
+                            <a href="https://github.com/robertosilva19/BibliotecaDB" class="btn btn-primary mt-auto"
+                                target="_blank" rel="noopener noreferrer">Ver Repositório</a>
+                            <!-- Alterado texto do botão -->
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
-                        <img src="assets/pagina_play.jpeg" class="card-img-top" alt="Website estilo youtube">
-                        <div class="card-body">
+                    <div class="card h-100">
+                        <img src="assets/pagina_play.jpeg" class="card-img-top" alt="Preview da Plataforma AluraPlay">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">AluraPlay - Plataforma Vídeo</h5>
-                            <p class="card-text">Estrutura HTML5 | Layout Flexbox | CSS Modular (BEM) | Vídeos Incorporados.</p>
-                            <a href="https://alura-play-kappa-five.vercel.app/" class="btn btn-primary">Ver Projeto</a>
+                            <p class="card-text flex-grow-1">Estrutura HTML5 | Layout Flexbox | CSS Modular (BEM) |
+                                Vídeos Incorporados.</p>
+                            <a href="https://alura-play-kappa-five.vercel.app/" class="btn btn-primary mt-auto"
+                                target="_blank" rel="noopener noreferrer">Ver Projeto</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
-                        <img src="assets/loja_meteora.jpeg" class="card-img-top" alt="Loja Meteora">
-                        <div class="card-body">
+                    <div class="card h-100">
+                        <img src="assets/loja_meteora.jpeg" class="card-img-top" alt="Preview da Loja Meteora">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Loja Meteora</h5>
-                            <p class="card-text">E-commerce | Responsivo | React & Node.js | Foco em Usabilidade.</p>
-                            <a href="https://loja-meteora-bay.vercel.app/" class="btn btn-primary">Ver Projeto</a>
+                            <p class="card-text flex-grow-1">E-commerce | Responsivo | Bootstrap | Foco em Usabilidade.
+                            </p> <!-- Atualizado tecnologias -->
+                            <a href="https://loja-meteora-bay.vercel.app/" class="btn btn-primary mt-auto"
+                                target="_blank" rel="noopener noreferrer">Ver Projeto</a>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section id="contato" class="py-5 bg">
-        <div class="contato container main-container">
+        <div class="container"> <!-- Removido main-container e contato, py-5 está na section -->
             <div class="text-center mb-5">
-                <h4 class="main-title display-4 fw-bold">MEU <span class="tech-purple">CONTATO</span></h4>
-                <p class="lead mb-4">Entre em contato e vamos conversar sobre o seu projeto!</p>
-                <div class="row justify-content-center contact-row">
-                    <!-- Conteúdo da seção Contato -->
-                    <div class="col-md-6">
-                        <!-- Adicionada classe personalizada "glowing-card-purple" -->
-                        <div class="card glowing-card-purple">
-                            <div class="card-body">
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="name" class="form-label">Nome</label>
-                                        <input type="text" class="form-control" id="name" required>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="email" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="email" required>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="message" class="form-label">Mensagem</label>
-                                        <textarea class="form-control" id="message" rows="3" required></textarea>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Enviar</button>
-                                </form>
-                            </div>
+                <h2 class="main-title display-4 fw-bold">ENTRE EM <span class="tech-purple">CONTATO</span></h2>
+                <!-- Alterado título e Usado h2 -->
+                <p class="lead mb-4">Tem alguma dúvida ou quer discutir seu projeto? Me envie uma mensagem!</p>
+                <!-- Texto alterado -->
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6"> <!-- Ajustado tamanho da coluna -->
+                    <!-- Adicionada classe personalizada "glowing-card-purple" -->
+                    <div class="card glowing-card-purple">
+                        <div class="card-body p-4"> <!-- Adicionado padding -->
+                            <!--
+                                IMPORTANTE: Este formulário precisa de um backend para funcionar.
+                                Substitua "SEU_ENDPOINT_DE_FORMULARIO_AQUI" pelo URL do seu script
+                                de processamento (PHP, Node.js, etc.) ou um serviço como Formspree.
+                            -->
+                            <form action="SEU_ENDPOINT_DE_FORMULARIO_AQUI" method="POST">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                    <!-- Adicionado atributo name -->
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <!-- Adicionado atributo name -->
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Mensagem</label>
+                                    <textarea class="form-control" id="message" name="message" rows="4"
+                                        required></textarea> <!-- Adicionado atributo name, aumentado rows -->
+                                </div>
+                                <div class="text-center"> <!-- Centralizar botão -->
+                                    <button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
+                                    <!-- Texto botão alterado, tamanho aumentado -->
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
-    <footer class="glowing-footer">
-        <div class="interface">
-            <div class="line-footer">
-                <div class="flex">
-                    <div class="logo-footer">
-                        <img src="assets/logotransparente-removebg-preview.png" alt="Logo do site Roberto Silva" height="50">
-                    </div> <!-- logo -->
-                    <div class="btn-social">
-                        <button>
-                            <a href="https://www.instagram.com/robertosilvabroker?igsh=emhxMGI0d3p6dzM1&utm_source=qr" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
-                                    class="bi bi-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/roberto-silva-310625150/" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
-                                    class="bi bi-linkedin"></i></a>
-                            <a href="https://github.com/robertosilva19" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
-                        </button>
-                    </div> <!--btn-social -->
-                </div> <!-- flex -->
-            </div> <!-- line-footer -->
-
-            <div class="flex line-footer borda">
-                <p><i class="bi bi-envelope-fill"></i><a
-                        href="mailto:robertosilva.comercial@gmail.com">robertosilva.comercial@gmail.com</a></p>
-                <p><i class="bi bi-box-arrow-up-right"></i><a href="https://github.com/robertosilva19/Portfolio" target="_blank" rel="noopener noreferrer">Acessar Repositório</a></p> 
-                <p><i class="bi bi-phone-fill"></i><a href="tel:+5511916611575" class="contact-link">+55 11 91661-1575</a></p> <!-- Adicionada informação de contato -->
-            </div> <!-- line-footer -->
-
-        </div> <!-- interface -->
+    <footer class="glowing-footer text-light py-4"> <!-- Adicionado text-light e padding -->
+        <div class="container"> <!-- Usado container do Bootstrap -->
+            <div class="row justify-content-between align-items-center mb-3">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <img src="assets/logotransparente-removebg-preview.png" alt="Logotipo de Roberto Silva (Rodapé)"
+                        height="50">
+                </div>
+                <div class="col-md-4 text-center">
+                    <!-- Ícones Sociais -->
+                    <a href="https://www.instagram.com/robertosilvabroker?igsh=emhxMGI0d3p6dzM1&utm_source=qr"
+                        class="text-light fs-4 mx-2" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/roberto-silva-310625150/" class="text-light fs-4 mx-2"
+                        target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
+                            class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/robertosilva19" class="text-light fs-4 mx-2" target="_blank"
+                        rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                </div>
+                <div class="col-md-4 text-center text-md-end mt-3 mt-md-0">
+                    <a href="https://github.com/robertosilva19/Portfolio" class="text-light" target="_blank"
+                        rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i> Ver Repositório</a>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255, 255, 255, 0.2);"> <!-- Linha divisória -->
+            <div class="row text-center">
+                <div class="col-md-6 mb-2 mb-md-0">
+                    <i class="bi bi-envelope-fill"></i> <a href="mailto:robertosilva.comercial@gmail.com"
+                        class="text-light">robertosilva.comercial@gmail.com</a>
+                </div>
+                <div class="col-md-6">
+                    <i class="bi bi-phone-fill"></i> <a href="tel:+5511916611575" class="text-light contact-link">+55 11
+                        91661-1575</a>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <small>©
+                    <?php echo date("Y"); ?> Roberto Silva. Todos os direitos reservados.
+                </small> <!-- Adicionado ano dinâmico com PHP opcional ou pode ser estático -->
+                <!-- Se não puder usar PHP: <small>© 2024 Roberto Silva. Todos os direitos reservados.</small> -->
+            </div>
+        </div>
     </footer>
 
-    <a href="#inicio" id="btn-topo" aria-label="Voltar ao topo">
-        <i class="bi bi-arrow-up-circle"></i>
+    <!-- Botão Voltar ao Topo -->
+    <a href="#inicio" id="btn-topo" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-3"
+        aria-label="Voltar ao topo" style="display: none; width: 50px; height: 50px; padding: 0; line-height: 50px;">
+        <i class="bi bi-arrow-up-circle fs-3"></i>
     </a>
 
     <!-- Bootstrap JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script para inicializar Tooltips -->
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        });
+
+        // Script simples para mostrar/ocultar botão "Voltar ao Topo"
+        var btnTopo = document.getElementById('btn-topo');
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                btnTopo.style.display = 'block';
+            } else {
+                btnTopo.style.display = 'none';
+            }
+        };
+    </script>
 </body>
 
-<script>
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl)
-    })
-</script>
-</body>
-
-</html>
+</html> 
