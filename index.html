@@ -85,7 +85,7 @@
                 <h2 class="fw-bold display-4">MINHAS <span class="especialidades-highlight">ESPECIALIDADES</span></h2>
             </div>
 
-            <div id="carouselEspecialidades" class="carousel slide">
+            <div id="carouselEspecialidades" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="d-flex flex-column align-items-center justify-content-center text-center">
@@ -395,42 +395,41 @@
     </section>
 
     <section id="contato" class="py-5 bg">
-        <div class="container"> <!-- Removido main-container e contato, py-5 está na section -->
+        <div class="container">
             <div class="text-center mb-5">
                 <h2 class="main-title display-4 fw-bold">ENTRE EM <span class="tech-purple">CONTATO</span></h2>
-                <!-- Alterado título e Usado h2 -->
                 <p class="lead mb-4">Tem alguma dúvida ou quer discutir seu projeto? Me envie uma mensagem!</p>
-                <!-- Texto alterado -->
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-6"> <!-- Ajustado tamanho da coluna -->
-                    <!-- Adicionada classe personalizada "glowing-card-purple" -->
+                <div class="col-md-8 col-lg-6">
                     <div class="card glowing-card-purple">
-                        <div class="card-body p-4"> <!-- Adicionado padding -->
+                        <div class="card-body p-4">
                             <!--
-                                IMPORTANTE: Este formulário precisa de um backend para funcionar.
-                                Substitua "SEU_ENDPOINT_DE_FORMULARIO_AQUI" pelo URL do seu script
-                                de processamento (PHP, Node.js, etc.) ou um serviço como Formspree.
+                                *** MODIFICAÇÕES AQUI ABAIXO ***
+                                1. Remova o comentário antigo sobre o endpoint.
+                                2. Atualize o atributo 'action'.
+                                3. Mantenha method="POST".
                             -->
-                            <form action="SEU_ENDPOINT_DE_FORMULARIO_AQUI" method="POST">
+                            <form action="https://formspree.io/f/mkgrgooj" method="POST">
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Nome</label>
+                                    <!-- O campo 'name="name"' será enviado para o Formspree -->
                                     <input type="text" class="form-control" id="name" name="name" required>
-                                    <!-- Adicionado atributo name -->
                                 </div>
                                 <div class="mb-3">
                                     <label for="email" class="form-label">Email</label>
+                                    <!-- O campo 'name="email"' será enviado para o Formspree -->
                                     <input type="email" class="form-control" id="email" name="email" required>
-                                    <!-- Adicionado atributo name -->
                                 </div>
                                 <div class="mb-3">
                                     <label for="message" class="form-label">Mensagem</label>
+                                    <!-- O campo 'name="message"' será enviado para o Formspree -->
                                     <textarea class="form-control" id="message" name="message" rows="4"
-                                        required></textarea> <!-- Adicionado atributo name, aumentado rows -->
+                                        required></textarea>
                                 </div>
-                                <div class="text-center"> <!-- Centralizar botão -->
+                                <div class="text-center">
+                                    <!-- O botão type="submit" funcionará normalmente -->
                                     <button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
-                                    <!-- Texto botão alterado, tamanho aumentado -->
                                 </div>
                             </form>
                         </div>
@@ -476,7 +475,6 @@
             </div>
             <div class="text-center mt-3">
                 <small>©
-                    <?php echo date("Y"); ?> Roberto Silva. Todos os direitos reservados.
                 </small> <!-- Adicionado ano dinâmico com PHP opcional ou pode ser estático -->
                 <!-- Se não puder usar PHP: <small>© 2024 Roberto Silva. Todos os direitos reservados.</small> -->
             </div>
@@ -511,4 +509,4 @@
     </script>
 </body>
 
-</html> 
+</html>
