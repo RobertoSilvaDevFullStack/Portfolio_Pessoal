@@ -1,7 +1,7 @@
 # Portfólio Pessoal - Roberto Silva
 
 
-![Screenshot do Portfólio](![image](https://github.com/RobertoSilvaDevFullStack/Portfolio_Pessoal/blob/05c276b4d2ec178140344703ee9f8e7257b68091/assets/WhatsApp%20Image%202025-07-21%20at%2015.48.16.jpeg)) <!-- SUBSTITUA PELO CAMINHO REAL DA SUA SCREENSHOT -->
+![Screenshot do Portfólio](![image](assets/WhatsApp%20Image%202025-07-21%20at%2015.48.16.jpeg))) <!-- SUBSTITUA PELO CAMINHO REAL DA SUA SCREENSHOT -->
 
 Bem-vindo ao repositório do meu portfólio pessoal! Este projeto foi desenvolvido para apresentar minhas habilidades, projetos e informações de contato como desenvolvedor web. O objetivo é servir como um cartão de visitas digital, demonstrando minhas competências para potenciais clientes, recrutadores ou colaboradores.
 
