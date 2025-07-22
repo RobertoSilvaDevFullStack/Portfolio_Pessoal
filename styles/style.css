@@ -551,3 +551,18 @@ body {
     box-shadow: 0 0 25px 5px rgba(138, 43, 226, 0.8);
     transform: scale(1.1); /* Leve aumento no hover */
   }
+
+  /* Estilo para o cursor piscante do efeito de digitação */
+.typing-cursor::after {
+    content: '|'; /* Caractere do cursor */
+    display: inline-block;
+    margin-left: 5px; /* Espaçamento do texto */
+    animation: blink-caret 0.75s step-end infinite; /* Animação de piscar */
+    color: var(--cor-terciaria); /* Cor do cursor, pode ser ajustada */
+    vertical-align: middle; /* Alinha o cursor com o texto */
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--cursor-color, white); } /* Usa a cor definida no JS ou branco */
+}

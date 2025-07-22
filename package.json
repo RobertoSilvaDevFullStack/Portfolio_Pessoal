@@ -1,0 +1,16 @@
+{
+  "name": "portfolio_pessoal",
+  "version": "1.0.0",
+  "description": "![Screenshot do Portfólio](![image](assets/WhatsApp%20Image%202025-07-21%20at%2015.48.16.jpeg))) <!-- SUBSTITUA PELO CAMINHO REAL DA SUA SCREENSHOT -->",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aos": "^3.0.7",
+    "typescript": "^5.8.3"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ES2017",                                /* Define a versão do JavaScript de saída. 'ES2017' é melhor para navegadores modernos. */
+
+    /* Modules */
+    "module": "ES6",                                   /* Especifica o sistema de módulos. 'ES6' é adequado para navegadores. */
+    "moduleResolution": "node",                        /* Especifica como os módulos devem ser resolvidos. */
+    "outDir": "./dist",                                /* Onde os arquivos JavaScript compilados serão salvos. */
+    "rootDir": "./src",                                /* Onde seus arquivos TypeScript estão localizados. */
+
+    /* Interop Constraints */
+    "esModuleInterop": true,                           /* Emite JavaScript adicional para facilitar a importação de módulos CommonJS. */
+    "forceConsistentCasingInFileNames": true,          /* Garante que a capitalização esteja correta nas importações. */
+
+    /* Type Checking */
+    "strict": true,                                    /* Ativa todas as verificações rigorosas de tipo (recomendado para código mais seguro). */
+    "noImplicitAny": true,                             /* Habilita o relatório de erros para expressões e declarações com um tipo 'any' implícito. */
+
+    /* Completeness */
+    "skipLibCheck": true                               /* Ignora a verificação de tipo de todos os arquivos .d.ts. */
+  },
+  "include": [
+    "src/**/*.ts"                                      /* Quais arquivos TypeScript devem ser incluídos na compilação. */
+  ],
+  "exclude": [
+    "node_modules"                                     /* Quais arquivos devem ser excluídos. */
+  ]
+}

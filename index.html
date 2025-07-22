@@ -14,6 +14,8 @@
     <!-- Seu CSS Customizado (Mantido apenas um link) -->
     <link rel="stylesheet" href="./styles/style.css">
     <!-- Links removidos: reset.css (redundante), Font Awesome, Devicon, Simple Icons (não utilizados) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -21,7 +23,8 @@
     <header id="inicio" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="./assets/logotransparente-removebg-preview.png" alt="Logotipo de Roberto Silva" height="50">
+                <img src="assets/logotransparente-removebg-preview.png" alt="Logotipo de Roberto Silva (Rodapé)"
+                    height="50">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,7 +55,7 @@
         </div>
     </header>
 
-    <main id="apresentacao" class="py-5">
+    <main id="apresentacao" class="py-5" data-aos="fade-up">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-7 mb-4 mb-lg-0">
@@ -65,7 +68,7 @@
                     <!-- Link do WhatsApp estático (PHP removido) -->
                     <a class="btn btn-success btn-lg d-inline-flex align-items-center"
                         href="https://api.whatsapp.com/send?phone=5511916611575&text=Olá%20Roberto%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços."
-                        target="_blank" rel="noopener noreferrer">
+                        target="_blank" rel="noopener noreferrer" aria-label="Fale comigo pelo WhatsApp">
                         <img src="./assets/whatsapp.png" alt="Ícone WhatsApp" class="me-2" style="height: 24px;">
                         Whatsapp
                     </a>
@@ -79,7 +82,7 @@
         </div>
     </main>
 
-    <section id="especialidades" class="py-5 bg">
+    <section id="especialidades" class="py-5 bg" data-aos="fade-up">
         <div class="container py-5">
             <div class="section-title text-center mb-5"> <!-- Adicionado text-center e margin bottom -->
                 <h2 class="fw-bold display-4">MINHAS <span class="especialidades-highlight">ESPECIALIDADES</span></h2>
@@ -91,7 +94,8 @@
                         <div class="d-flex flex-column align-items-center justify-content-center text-center">
                             <!-- Adicionado text-center -->
                             <img src="./assets/cart4.svg" class="item__loja d-block mb-3"
-                                alt="Ícone representando Loja Online"> <!-- Adicionado margin bottom -->
+                                alt="Ícone representando uma Loja Online">
+                            <!-- Adicionado margin bottom -->
                             <!-- Removido d-none d-md-block para sempre mostrar -->
                             <div class="carousel-caption">
                                 <h5 class="carousel-item-titulo">Loja Online</h5>
@@ -103,7 +107,8 @@
                     <div class="carousel-item">
                         <div class="d-flex flex-column align-items-center justify-content-center text-center">
                             <img src="./assets/wordpress.svg" class="item__loja d-block mb-3"
-                                alt="Ícone representando Blog">
+                                alt="Ícone representando um Blog ou WordPress">
+
                             <div class="carousel-caption">
                                 <h5 class="carousel-item-titulo">Blog</h5>
                                 <p class="carousel-item-conteudo">Desenvolvimento de soluções para blogs, integrando
@@ -114,7 +119,8 @@
                     <div class="carousel-item">
                         <div class="d-flex flex-column align-items-center justify-content-center text-center">
                             <img src="./assets/people-fill.svg" class="item__loja d-block mb-3"
-                                alt="Ícone representando Loja de Serviços">
+                                alt="Ícone representando Serviços ou Atendimento a Pessoas">
+
                             <div class="carousel-caption">
                                 <h5 class="carousel-item-titulo">Loja de Serviços</h5>
                                 <p class="carousel-item-conteudo">Criação de plataformas para agendamento e venda de
@@ -125,7 +131,8 @@
                     <div class="carousel-item">
                         <div class="d-flex flex-column align-items-center justify-content-center text-center">
                             <img src="./assets/buildings.svg" class="item__loja d-block mb-3"
-                                alt="Ícone representando Landing Pages Imobiliárias">
+                                alt="Ícone representando Imóveis ou Construções">
+
                             <div class="carousel-caption">
                                 <h5 class="carousel-item-titulo">Landing Pages</h5>
                                 <p class="carousel-item-conteudo">Desenvolvimento de páginas de captação de leads
@@ -136,7 +143,8 @@
                     <div class="carousel-item">
                         <div class="d-flex flex-column align-items-center justify-content-center text-center">
                             <img src="./assets/diagram-3.svg" class="item__loja d-block mb-3"
-                                alt="Ícone representando Websites">
+                                alt="Ícone representando Websites ou Diagramas de Estrutura">
+
                             <div class="carousel-caption">
                                 <h5 class="carousel-item-titulo">Websites</h5>
                                 <p class="carousel-item-conteudo">Criação de sites responsivos e otimizados para expor a
@@ -160,7 +168,7 @@
     </section>
 
     <!-- Seção Tecnologias envolvida por <section> -->
-    <section id="tecnologias" class="py-5">
+    <section id="tecnologias" class="py-5" data-aos="fade-up">
         <div class="container"> <!-- Removido main-container, py-5 está na section -->
             <div class="text-center mb-5">
                 <h2 class="main-title display-4 fw-bold">MINHAS <span class="tech-purple">TECNOLOGIAS</span></h2>
@@ -173,8 +181,9 @@
                 <div class="row text-center mb-4">
                     <h4 class="section-title display-5">Linguagens</h4> <!-- Ajustado display para h4 -->
                     <div class="d-flex justify-content-center flex-wrap gap-4">
-                        <img class="tech-icon" src="assets/html5.svg" alt="Ícone HTML 5" data-bs-toggle="tooltip"
-                            title="HTML 5" />
+                        <img class="tech-icon" src="assets/html5.svg" alt="Ícone da tecnologia HTML 5"
+                            data-bs-toggle="tooltip" title="HTML 5" />
+
                         <img class="tech-icon" src="assets/css3.svg" alt="Ícone CSS 3" data-bs-toggle="tooltip"
                             title="CSS 3" />
                         <img class="tech-icon" src="assets/javascript.svg" alt="Ícone JavaScript"
@@ -294,7 +303,8 @@
                     </p>
                 </div>
                 <div class="foto_perfil col-lg-5 text-center">
-                    <img src="./assets/minha_foto.jpeg" alt="Foto de Roberto Silva"
+                    <img src="./assets/minha_foto.jpeg"
+                        alt="Foto de Roberto Silva, desenvolvedor web, sorrindo e olhando para o notebook"
                         class="img-fluid floating-effect glowing-border"
                         style="max-width: 350px; border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;">
                 </div>
@@ -443,19 +453,23 @@
         <div class="container"> <!-- Usado container do Bootstrap -->
             <div class="row justify-content-between align-items-center mb-3">
                 <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
-                    <img src="assets/logotransparente-removebg-preview.png" alt="Logotipo de Roberto Silva (Rodapé)"
-                        height="50">
+                    <img src="./assets/logotransparente-removebg-preview.png"
+                        alt="Logotipo de Roberto Silva - Desenvolvedor Web e Gestor de Tráfego" height="50">
                 </div>
                 <div class="col-md-4 text-center">
                     <!-- Ícones Sociais -->
-                    <a href="https://www.instagram.com/robertosilvabroker?igsh=emhxMGI0d3p6dzM1&utm_source=qr"
-                        class="text-light fs-4 mx-2" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
-                            class="bi bi-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/roberto-silva-310625150/" class="text-light fs-4 mx-2"
-                        target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
-                            class="bi bi-linkedin"></i></a>
-                    <a href="https://github.com/robertosilva19" class="text-light fs-4 mx-2" target="_blank"
-                        rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                    <a href="..." class="text-light fs-4 mx-2" target="_blank" rel="noopener noreferrer"
+                        aria-label="Meu perfil no Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="..." class="text-light fs-4 mx-2" target="_blank" rel="noopener noreferrer"
+                        aria-label="Meu perfil no LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="..." class="text-light fs-4 mx-2" target="_blank" rel="noopener noreferrer"
+                        aria-label="Meu perfil no GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
                 </div>
                 <div class="col-md-4 text-center text-md-end mt-3 mt-md-0">
                     <a href="https://github.com/robertosilva19/Portfolio" class="text-light" target="_blank"
@@ -474,9 +488,7 @@
                 </div>
             </div>
             <div class="text-center mt-3">
-                <small>©
-                </small> <!-- Adicionado ano dinâmico com PHP opcional ou pode ser estático -->
-                <!-- Se não puder usar PHP: <small>© 2024 Roberto Silva. Todos os direitos reservados.</small> -->
+                <small>© 2025 Roberto Silva. Todos os direitos reservados.</small>
             </div>
         </div>
     </footer>
@@ -507,6 +519,11 @@
             }
         };
     </script>
+    <!-- Importando o AOS (Animate On Scroll) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="module" src="./dist/ts/main.js"></script>
+    <!-- Importando o arquivo TypeScript compilado -->
 </body>
 
 </html>
